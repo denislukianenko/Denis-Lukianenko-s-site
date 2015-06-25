@@ -5,7 +5,7 @@ description: motion-artist
 
 # Build settings
 
-markdown: kramdown
+markdown: redcarpet
 permalink: pretty
 baseurl: /home
 
