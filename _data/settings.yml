@@ -2,7 +2,7 @@
 # My Projects
 
 projects:
-    - {name: 'Luminosity', description: 'Выдуманный проект',thumb-folder: 'proj-1', file: 'work/proj-1.html'}
+    - {name: 'Luminosity', description: 'Выдуманный проект',thumb-folder: 'proj-1', file: '{{ site.baseurl }}/work/proj-1.html'}
     - {name: 'ATHENA', description: 'Выдуманный проект',thumb-folder: 'proj-2', file: 'work/proj-2.html'}
     - {name: '11th class', description: 'Выдуманный проект',thumb-folder: 'proj-3', file: 'work/proj-3.html'}
     - {name: 'HIPSTER DEER', description: 'Выдуманный проект',thumb-folder: 'proj-4', file: 'work/proj-4.html'}

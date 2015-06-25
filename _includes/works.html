@@ -37,7 +37,7 @@
                 {% for project in site.data.settings.projects %}
                      <div class="noscript" id="content-{{ project.thumb-folder }}">
                             <h4 class="project-title">{{ project.name }}</h4>
-                            <div class="noscript-load">{% include {{ site.baseurl }}/{{project.file}} %}</div>
+                            <div class="noscript-load">{% include {{project.file}} %}</div>
                      </div>
                 {% endfor %}
                 </noscript> 
