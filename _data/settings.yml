@@ -2,12 +2,12 @@
 # My Projects
 
 projects:
-    - {name: 'Luminosity', description: 'Выдуманный проект',thumb-folder: 'proj-1', file: '{{ site.baseurl }}/work/proj-1.html'}
-    - {name: 'ATHENA', description: 'Выдуманный проект',thumb-folder: 'proj-2', file: 'work/proj-2.html'}
-    - {name: '11th class', description: 'Выдуманный проект',thumb-folder: 'proj-3', file: 'work/proj-3.html'}
-    - {name: 'HIPSTER DEER', description: 'Выдуманный проект',thumb-folder: 'proj-4', file: 'work/proj-4.html'}
-    - {name: 'Design morning', description: 'Выдуманный проект',thumb-folder: 'proj-5', file: 'work/proj-5.html'}
-    - {name: 'MMORE intro', description: 'Выдуманный проект',thumb-folder: 'proj-6', file: 'work/proj-6.html'}
-    - {name: 'H20', description: 'Выдуманный проект',thumb-folder: 'proj-7', file: 'work/proj-7.html'}
-    - {name: 'HAPPY NY 2015', description: 'Выдуманный проект',thumb-folder: 'proj-8', file: 'work/proj-8.html'}
-    - {name: 'Own project', description: 'Выдуманный проект',thumb-folder: 'proj-9', file: 'work/proj-9.html'}
+    - {name: 'Luminosity', description: 'Выдуманный проект',thumb-folder: 'proj-1', file: 'home/work/proj-1.html'}
+    - {name: 'ATHENA', description: 'Выдуманный проект',thumb-folder: 'proj-2', file: 'home/work/proj-2.html'}
+    - {name: '11th class', description: 'Выдуманный проект',thumb-folder: 'proj-3', file: 'home/work/proj-3.html'}
+    - {name: 'HIPSTER DEER', description: 'Выдуманный проект',thumb-folder: 'proj-4', file: 'home/work/proj-4.html'}
+    - {name: 'Design morning', description: 'Выдуманный проект',thumb-folder: 'proj-5', file: 'home/work/proj-5.html'}
+    - {name: 'MMORE intro', description: 'Выдуманный проект',thumb-folder: 'proj-6', file: 'home/work/proj-6.html'}
+    - {name: 'H20', description: 'Выдуманный проект',thumb-folder: 'proj-7', file: 'home/work/proj-7.html'}
+    - {name: 'HAPPY NY 2015', description: 'Выдуманный проект',thumb-folder: 'proj-8', file: 'home/work/proj-8.html'}
+    - {name: 'Own project', description: 'Выдуманный проект',thumb-folder: 'proj-9', file: 'home/work/proj-9.html'}
