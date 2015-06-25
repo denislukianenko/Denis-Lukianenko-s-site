@@ -1,0 +1,286 @@
+.section-works
+    background: url(../img/works-bg.jpg) center center
+    background-size: cover
+    overflow-x: hidden
+    
+    h3
+        color: white
+ 
+    .exit-button
+        float: right
+        margin-right: -15px
+        margin-top: 5px
+        transform: scale(10,10)
+        cursor: pointer
+        path
+            fill: #c7c7c7
+        
+        &:hover
+            path
+                fill: #9b9b9b
+        
+.noscript
+    display: none
+    
+@each $proj in $projects
+    ##{$proj}:checked ~ .work-belt .work-wrap .work-container noscript #content-#{$proj}
+        display: block
+
+.return
+    display: none
+
+.trigger
+    display: none
+   
+
+//    &:checked ~ .work-belt
+        left: -100%
+        
+        .work-wrap .work-container
+            display: block
+                       
+
+.work-belt
+    width: 200%
+    position: relative
+    left: 0%
+    transform: translate3d(-0%, 0, 0)
+    +transition(all, 800ms cubic-bezier(.41,.08,.26,.99))
+    
+.work-container
+    display: none
+    border-radius: 3px
+    max-width: 1200px
+    background: white
+    padding: 50px
+    margin: 0 auto 120px
+
+    overflow: hidden
+    h4
+        @extend %work-title
+        font-size: 19px 
+    
+    img
+        max-width: 100% 
+        margin: 0 20px 20px 0
+        float: left
+    p
+        clear: both
+        
+    div
+        max-width: 100% 
+        margin: 25px 0
+    
+    
+.thumb-wrap, .work-wrap
+    width: 50%
+    float: left
+        
+.thumb-container
+    max-width: 860px
+    margin: 0px auto
+    padding-bottom: 100px
+
+    +clearfix
+
+//  .thumb-unit
+        display: block
+        width: 25%
+        float: left
+        position: relative
+        padding-top: 35%
+        overflow: hidden
+        box-shadow: 0 0 100px rgba(0,0,0,0.5)
+
+        background-image: url(/assets/img/work/proj-1/thumb.jpg)
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
+
+        .thumb-overlay
+            +position(absolute, 100% 0px null 0px)
+            height: 100%
+            background: fade-out(black, 0.7)
+            text-align: center
+            +transition
+            
+            strong
+                display: block
+                padding: 20px
+            
+        &:hover .thumb-overlay
+            +position(absolute, 0% 0px null 0px)
+            
+            
+* 
+    box-sizing: border-box
+    &:after 
+        box-sizing: border-box
+
+    &:before 
+        box-sizing: border-box
+
+
+.clearfix 
+    &:before 
+        display: table
+        content: ''
+
+    &:after 
+        display: table
+        content: ''
+        clear: both
+            
+//@extend-elements
+//original selectors
+//.grid figure figcaption, .grid figure figcaption > a
+%extend_1 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+//original selectors
+//figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after
+%extend_2 
+    position: absolute
+    top: 10px
+    right: 10px
+    bottom: 10px
+    left: 10px
+    content: ''
+    opacity: 0
+    transition: opacity 0.35s, transform 0.35s
+
+
+
+.grid 
+    position: relative
+    max-width: 25%
+    list-style: none
+    text-align: center
+    float: left
+
+
+    
+    figure 
+        position: relative
+        float: left
+        overflow: hidden
+        margin: 0
+        size: 10%
+        background: #3085a3
+        text-align: center
+        cursor: pointer
+        img 
+            position: relative
+            display: block
+            min-height: 25%
+            max-width: 100%
+            opacity: 0.8
+
+        figcaption 
+            padding: 2em
+            color: #fff
+            font-size: 1.25em
+            backface-visibility: hidden
+            @extend %extend_1
+            > a 
+                @extend %extend_1
+                z-index: 1000
+                text-indent: 200%
+                white-space: nowrap
+                font-size: 0
+                opacity: 0
+
+
+        figcaption::before 
+            pointer-events: none
+
+        figcaption::after 
+            pointer-events: none
+
+        h2 
+            @extend %main-title
+            color: white
+            font-weight: 400
+            span
+                font-weight: 800
+
+
+        p 
+            color: white
+            font-size: 14px
+
+    @media screen and (max-width: 516)
+        max-width: 50%
+
+
+figure.effect-bubba 
+    background: black
+    img 
+        opacity: 1
+        transition: opacity 0.35s
+        
+    h2
+        opacity: 0
+        transition: opacity 0.35s
+
+    &:hover 
+        img 
+            opacity: 0.2
+
+        figcaption::before 
+            opacity: 1
+            transform: scale(1)
+
+        figcaption::after 
+            opacity: 1
+            transform: scale(1)
+
+        h2
+            opacity: 1
+            transform: translate3d(0,0,0)
+
+        p 
+            opacity: 1
+            transform: translate3d(0,0,0)
+
+
+    figcaption::before 
+        @extend %extend_2
+        border-top: 1px solid #fff
+        border-bottom: 1px solid #fff
+        transform: scale(0,1)
+
+    figcaption::after 
+        @extend %extend_2
+        border-right: 1px solid #fff
+        border-left: 1px solid #fff
+        transform: scale(1,0)
+
+    h2 
+        padding-top: 10%
+        padding-bottom: 20px
+        transition: transform 0.35s
+        transform: translate3d(0,-20px,0)
+
+    p 
+        padding: 10px 10px
+        opacity: 0
+        transition: opacity 0.35s, transform 0.35s
+        transform: translate3d(0,20px,0)    
+
+@media screen and (max-width: 700px)
+    .grid    
+        max-width: 33.333%
+
+@media screen and (max-width: 517px)
+    .grid    
+        max-width: 50%
+        
+@media screen and (max-width: 250px)
+    .grid    
+        max-width: 100%

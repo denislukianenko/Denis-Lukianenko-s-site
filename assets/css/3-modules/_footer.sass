@@ -1,0 +1,47 @@
+footer
+    height: 185px
+    background: url(../img/header-bg.jpg) center top
+    background-size: cover
+
+    .logo 
+        width: 121px
+        height: 46px
+        float: left
+        margin: 70px 0 0 35px 
+        font:
+            family: 'HelveticaNeueCyr','Helvetica'
+            size: 22px
+            weight: 700
+        color: white
+        line-height: 25px
+
+    nav
+        float: right
+        padding: 80px 60px 0 0
+        a
+            display: inline-block
+            margin-left: 70px
+            @extend %menu-font
+            
+        
+@media (max-width: 783px)
+    footer
+        .logo
+            width: 121px
+            height: 46px
+            margin: 30px 61% 35px 39%
+            
+        nav
+            float: none
+            text-align: center
+            padding: 0 0 0 0
+            
+            a:nth-child(1)
+                margin-left: 0px
+            
+@media (max-width: 525px)
+    footer
+        nav
+            a
+                margin-left: 10px
+                
