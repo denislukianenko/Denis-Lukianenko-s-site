@@ -7,10 +7,10 @@ description: motion-artist
 
 markdown: kramdown
 permalink: pretty
-baseurl: home
+baseurl:
 
 port: 3000
 
 sass:
-  sass_dir: assets/css
+  sass_dir: home/assets/css
   style: :nested
