@@ -7,7 +7,7 @@ description: motion-artist
 
 markdown: kramdown
 permalink: pretty
-baseurl: 
+baseurl: home
 
 port: 3000
 
